@@ -1,4 +1,3 @@
-import sys
 from commands import *
 
 _, command, *args = sys.argv

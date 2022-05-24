@@ -117,9 +117,11 @@ def test_get_file():
     expected = 'Content successfully copied!'
     actual = get_file(arg1, arg2)
     assert expected == actual
+    actual = open(arg1, 'r')
+    assert actual.read() == 'Test 5'
 
     arg1, arg2 = 'test_assets/zeon_fs/new_file_name.txt',\
-                 'test_resources/test5.txt'
+                 'test_resources/test4.txt'
     expected = 'This file already exists!'
     actual = get_file(arg1, arg2)
     assert expected == actual
