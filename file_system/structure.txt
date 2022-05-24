@@ -1,0 +1,35 @@
+### File System ###
+
+# Model
+# Decomposition
+# Pytest
+# Code
+
+
+# Model
+    # Directory
+        # File
+
+
+# Decomposition
+    # check_commands(commands: list) -> str
+        # check commands
+    # init (directory: str) -> str
+        # check if directory exists
+        # create directory
+    # list (dir_name: str) -> list
+        # list directory files and directories
+    # add (file_name: str, from_path: str) -> str
+        # check if file_name already exists
+        # if file not exists
+            # copy from path
+            # put to file
+    # delete (file_name: str) -> str
+        # check if file_name exists
+        # delete file
+    # get (file_name: str, from_path: str) -> str
+        # check if file already exists
+        # if file not exists
+            # create file with file_name
+            # copy from path
+            # put to file
